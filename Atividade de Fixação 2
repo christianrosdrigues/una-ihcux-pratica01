@@ -1,0 +1,114 @@
+(Exercício 1: Explorando Templates)
+
+
+Microsoft Windows [versão 10.0.26200.8037]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\chris>dotnet new list
+Esses modelos correspondem à sua entrada:
+
+Nome do modelo      Nome Curto                    Idioma      Tags          
+------------------  ----------------------------  ----------  ----------------------------------
+API Web do ASP....  webapi                        [C#],F#     Web/Web API/API/Service
+Aplicativo Autô...  blazorwasm                    [C#]        Web/Blazor/WebAssembly/PWA
+Aplicativo do C...  console                       [C#],F#,VB  Common/Console
+Aplicativo do W...  winforms                      [C#],VB     Common/WinForms
+Aplicativo Web ...  blazor                        [C#]        Web/Blazor/WebAssembly
+Aplicativo Web ...  mvc                           [C#],F#     Web/MVC       
+Aplicativo Web ...  webapp,razor                  [C#]        Web/MVC/Razor Pages
+Aplicativo WPF      wpf                           [C#],VB     Common/WPF    
+Arquivo de Buff...  proto                                     Web/gRPC      
+Arquivo de Conf...  webconfig                                 Config        
+arquivo de dotn...  gitignore,.gitignore                      Config        
+Arquivo de mani...  tool-manifest                             Config        
+Arquivo de Solução  sln,solution                              Solution      
+Arquivo EditorC...  editorconfig,.editorconfig                Config        
+arquivo gitattr...  gitattributes,.gitattributes              Config        
+arquivo global....  globaljson,global.json                    Config        
+Arquivo MSBuild...  buildprops                                MSBuild/props 
+Arquivo MSBuild...  buildtargets                              MSBuild/props 
+Arquivo MSBuild...  packagesprops                             MSBuild/packages/props/CPM
+ASP.NET Core AP...  webapiaot                     [C#]        Web/Web API/API/Service
+ASP.NET Core Vazio  web                           [C#],F#     Web/Empty     
+Biblioteca de C...  classlib                      [C#],F#,VB  Common/Library
+Biblioteca de C...  winformslib                   [C#],VB     Common/WinForms
+Biblioteca de C...  razorclasslib                 [C#]        Web/Razor/Library
+Biblioteca de C...  wpflib                        [C#],VB     Common/WPF    
+Biblioteca de C...  wpfusercontrollib             [C#],VB     Common/WPF    
+Biblioteca de C...  winformscontrollib            [C#],VB     Common/WinForms
+Biblioteca de C...  wpfcustomcontrollib           [C#],VB     Common/WPF    
+Classe de teste...  mstest-class                  [C#],F#,VB  Test/MSTest   
+Componente Razor    razorcomponent                [C#]        Web/ASP.NET   
+Configuração do...  nugetconfig,nuget.config                  Config        
+Controlador de API  apicontroller                 [C#]        Web/ASP.NET   
+Controlador MVC     mvccontroller                 [C#]        Web/ASP.NET   
+Exibição do Razor   view                          [C#]        Web/ASP.NET   
+Item de Teste N...  nunit-test                    [C#],F#,VB  Test/NUnit    
+MVC ViewImports     viewimports                   [C#]        Web/ASP.NET   
+MVC ViewStart       viewstart                     [C#]        Web/ASP.NET   
+Projeto de Test...  mstest                        [C#],F#,VB  Test/MSTest/Desktop/Web
+Projeto de Test...  mstest-playwright             [C#]        Test/MSTest/Playwright/Desktop/Web
+Projeto de Test...  nunit                         [C#],F#,VB  Test/NUnit/Desktop/Web
+Projeto de Test...  nunit-playwright              [C#]        Test/NUnit/Playwright/Desktop/Web
+Projeto de Test...  xunit                         [C#],F#,VB  Test/xUnit/Desktop/Web
+Página Razor        page                          [C#]        Web/ASP.NET   
+Serviço de Trab...  worker                        [C#],F#     Common/Worker/Web
+Serviço gRPC do...  grpc                          [C#]        Web/gRPC/API/Service
+
+
+
+
+
+
+(Exercício 2: Mudando a Saída)
+
+
+
+Microsoft Windows [versão 10.0.26200.8037]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\chris>dotnet new console -n calculadora -f net10.0
+O modelo "Aplicativo do Console" foi criado com êxito.
+
+Processando ações pós-criação...
+Restaurando C:\Users\chris\calculadora\calculadora.csproj:
+A restauração foi bem-sucedida.
+
+
+
+C:\Users\chris>cd calculadora
+
+C:\Users\chris\calculadora>dotnet run
+Hello, World!
+
+C:\Users\chris\calculadora>
+
+
+
+
+
+(Exercício 3: O arquivo de Projeto)
+
+
+
+Microsoft Windows [versão 10.0.26200.8037]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\chris>cd calculadora
+
+C:\Users\chris\calculadora>notepad calculadora.csproj
+
+C:\Users\chris\calculadora>
+
+
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
